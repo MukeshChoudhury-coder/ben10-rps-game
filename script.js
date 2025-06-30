@@ -6,8 +6,6 @@ const selectBtn=document.querySelector(".select")
 const fightHero=document.querySelector(".hero")
 const villainCard=document.querySelector(".villains")
 const allOptions=document.querySelector(".all-options")
-const heroLevel=document.querySelector(".hero-levels")
-const villainLevel=document.querySelector(".villain-levels")
 const heroOption=document.querySelector(".option-image")
 const villainOption=document.querySelector(".option-image-villain")
 
@@ -112,8 +110,7 @@ allOptions.style.pointerEvents="none";
   villainCard.style.pointerEvents="none"
   villainCard.style.filter="grayscale(100%)"
   
-  heroLevel.style.pointerEvents="none"
-  heroLevel.style.filter="grayscale(100%)"
+  
   
   heroOption.src=""
   villainOption.src=""
@@ -167,8 +164,7 @@ allOptions.style.filter = "grayscale(0%)"
 villainCard.style.pointerEvents="auto"
 villainCard.style.filter = "grayscale(0%)"
 
-heroLevel.style.pointerEvents="auto"
-heroLevel.style.filter = "grayscale(0%)"
+
 }, 2000)
 
 if(fightHero.src===swipHero.src){
@@ -292,9 +288,7 @@ function ifHeroWin(){
     resultMsg.innerText=heroQuotess
     resultMsg.style.color="green"
     
-heroLevel.style.padding = "10px 140px"
-heroLevel.style.backgroundColor = "green"
-    
+
     levelShow.innerText="2"
     
     allOptions.style.pointerEvents = "none";
@@ -325,8 +319,6 @@ villainTwo.style.filter="grayscale(0%)"
     resultMsg.innerText=heroQuotess
     resultMsg.style.color="green"
     
-    heroLevel.style.padding = "10px 140px"
-heroLevel.style.backgroundColor = "green"
     
     levelShow.innerText="3"
     heroBtn.style.pointerEvents="auto"

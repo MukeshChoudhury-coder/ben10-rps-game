@@ -3,6 +3,10 @@
   margin: 0px;
   box-sizing: border-box;
 }
+body{
+  text-align: center;
+  align-items: center;
+}
 
 .container{
   width: 100%;
@@ -11,20 +15,41 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(ben10-background-Theme/theme-3.png);
+  background-image: url(ben10-background-Theme/theme-2.png);
   background-repeat: cover;
   
 }
-.write{
+.title-stats{
+  width: 100%;
   color: white;
-  background-color: forestgreen;
-  padding: 50px 120px;
-  margin: 5px 20px;
-  border-radius:25px;
-  border: 2px solid black;
-  font-size: 40px;
-  text-align: center;
-  font-weight: bolder;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px 20px;
+  background-color:black;
+  border: 2px solid rgb(2, 100, 2);
+  border-radius: 8px;
+}
+.title{
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 10px 15px ;
+  color: rgb(4, 167, 4);
+  text-decoration: underline;
+}
+.stats-btn{
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size:20px ;
+  padding: 10px 10px ;
+  background-color: green;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.stats-btn:hover{
+   background-color: rgb(95, 226, 95);
 }
 
 .villains-level{
@@ -162,7 +187,7 @@
    justify-content: center;
    align-items: center;
    flex-direction: row;
-   padding: px 10px;
+   padding: 10px;
    gap: 50px;
   
  }
@@ -174,7 +199,7 @@
    align-items: center;
    flex-direction: column;
    color: white;
-   padding: 10px 10px;
+   padding: 10px 60px;
    margin: 20px 20px;
    border-radius: 20px;
    border: 5px solid green;
@@ -213,7 +238,7 @@
    align-items: center;
    flex-direction: column;
    color: white;
-   padding: 10px 10px;
+   padding: 10px 40px;
    border-radius: 20px;
    border: 5px solid green;
    background-color: black;
@@ -327,7 +352,6 @@ padding: 10px 40px;
   background-color: forestgreen;
   border: 3px solid black;
   padding: 8px 60px;
-  gap: 50px;
   
 }
 .all-options img{
@@ -341,4 +365,103 @@ padding: 10px 40px;
 .all-options img:active {
   transform: scale(1.1);
   transition: 0.2s;
+}
+
+/** leader-board*/
+.leader-board{
+  position:fixed;
+  top: 0;
+  left: 100%;
+  width: 550px;
+  background-color: black;
+  height: 100vh;
+  transition: 0.5s;
+  color: white;
+}
+
+.active .leader-board{
+  left: 61.5%;
+}
+/** villains- defeated-count*/
+.villain-first , .villain-second, .villain-third{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 20px;
+  padding: 0 40px;
+  border-radius: 8px;
+  border:2px solid green;
+}
+.first-img , .second-img ,.third-img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 5px 0;
+  border: 3px solid green;
+}
+
+.defeat-count-first, .defeat-count-second, .defeat-count-third{
+  font-family: sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+.leader-board-css{
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 2px solid green;
+  color: green;
+  padding: 15px ;
+  margin: 15px 10px;
+}
+.villains-defeated{
+   margin: 18px 0;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight:650;
+}
+
+/** game-stats*/
+
+.game-stats{
+  background-color: rgb(2, 88, 2);
+  margin: 20px 20px;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+.total,.total-win, .totalt-losses, .streak{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 20px;
+  padding: 10px 40px;
+  border-radius: 8px;
+  border:2px solid green;
+  background-color: black;
+  
+}
+.stats{
+  margin: 18px 0;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight:650;
+}
+
+.total-games, .losses, .winning-rate, .win{
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: azure;
+}
+.close-tab{
+  position: relative;
+  top: 80px;
+  right: 200px;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 20px 10px;
 }

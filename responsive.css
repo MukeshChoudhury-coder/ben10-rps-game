@@ -7,7 +7,6 @@
      flex-direction: column;
      margin: auto;
      padding: 0 30px;  
-     background-image: url(ben10-background-Theme/theme-2.png);
     }
    .write-stats{
     padding: 5px 5px;
@@ -223,5 +222,6 @@
   margin: 0 25px;
 }
 }
+
 
 

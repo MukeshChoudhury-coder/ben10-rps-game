@@ -370,17 +370,21 @@ padding: 10px 40px;
 /** leader-board*/
 .leader-board{
   position:fixed;
-  top: 0;
+  top: 15%;
   left: 100%;
-  width: 550px;
+  width: 650px;
   background-color: black;
-  height: 100vh;
+  height: 80vh;
   transition: 0.5s;
   color: white;
+  border-radius: 8px;
+  border: 2px solid white;
+  margin: 10px 20px;
 }
 
 .active .leader-board{
-  left: 61.5%;
+  left: 33.5%;
+  max-width: 50%;
 }
 /** villains- defeated-count*/
 .villain-first , .villain-second, .villain-third{
@@ -389,7 +393,7 @@ padding: 10px 40px;
   align-items: center;
   flex-direction: row;
   margin: 10px 20px;
-  padding: 0 40px;
+  padding: 6px 40px;
   border-radius: 8px;
   border:2px solid green;
 }
@@ -464,4 +468,5 @@ padding: 10px 40px;
   font-weight: 600;
   font-size: 25px;
   margin: 20px 10px;
+  cursor: pointer;
 }

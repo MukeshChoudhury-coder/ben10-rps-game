@@ -1,230 +1,107 @@
-/** for mobile**/
- 
-@media  (max-width:480px){
-    .container{
-     width:100%;
-     display: flex;
-     flex-direction: column;
-     margin: auto;
-     padding: 0 30px;  
-     background: red;
-    }
-   .write-stats{
-    padding: 5px 5px;
-   }
-   .title{
-    font-size: 15px;
-    font-weight: 600;
-    padding: 5px 5px;
-   }
-    .stats-btn{
-      font-size: 10px;
-      padding: 8px 8px;
-    }
-    .header-level{
-        padding: 8px 60px;
-        font-size: 20px;
-    }
-    
-    .active .leader-board{
-      left: 30%;
-      width: 300px;
-    }
-    .close-tab{
-      top: 10px;
-      right: 80px;
-      font-size: 20px;
-    }
-    .leader-board-css{
-      font-size: 12px;
-      font-weight: 900;
-      padding: 10px;
-      margin: 30px 10px;
-    }
-    .villains-defeated{
-      font-size: 15px;
-      font-weight: 950;
-    }
-    .villain-first , .villain-second, .villain-third{
-      margin: 8px 20px ;
-      padding: 0, 20px;
-    }
-    .total,.total-win, .totalt-losses, .streak{
-      
-      padding: 10px 30px ;
-    }
-    .total-games, .losses, .winning-rate, .win{
-      
-      font-weight: 700;
-      font-size: 13px;
-    }
-    .leader-board {
-      top: 20px;
-      height: 90vh;
-    }
-    .villains-count{
-  padding: 20px 38px;
-  margin: 5px 20px;
+@media screen and (max-width: 480px) {
   
-}
-.villain-one {
-    position: relative;
-    right: 10px;
-  padding: 5px 5px;
-  margin: 0 4px;
-  margin-right: 20px;
-}
+  /* Container background fix */
+  .container {
+    background-size: cover;
+    background-position: center;
+  }
 
-.villain-one img{
-   height: 80px;
-   width:80px;
-   border-radius: 8px;
+  /* Headings */
+  h1 {
+    font-size: 32px;
+    padding: 10px 30px;
+    text-align: center;
+  }
+
+  .write {
+    font-size: 24px;
+    padding: 20px 30px;
+  }
+
+  /* Villains section */
+  .villains-count {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .villain-one, 
+  .villain-two, 
+  .villain-three {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .villain-one img,
+  .villain-two img,
+  .villain-three img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .villain-one p,
+  .villain-two p,
+  .villain-three p {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* Hero and Villain main cards */
+  .heros img, 
+  .villains img {
+    width: 250px;
+    height: 350px;
+  }
+
+  .heros p, 
+  .villains p {
+    font-size: 28px;
+    padding: 15px;
+  }
+
+  .hero-levels, 
+  .villain-levels {
+    padding: 10px 40px;
+  }
+
+  /* Options */
+  .all-options {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px 20px;
+  }
+
+  .all-options img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Swipe section */
+  .swip-hero-div img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .swip-btn {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-btn,
+  .select,
+  .reset {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+
+  /* Popup message */
+  .pop-up {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .result-msg {
+    font-size: 18px;
+  }
  }
-
- .villain-one p{
-   font-size: 10px;
-   padding: 4px 8px;
-   border-radius: 8px;
-   border: 1px solid springgreen;
- }
-
- .villain-two {
-    position: relative;
-    right: 10px;
-  padding: 5px 5px;
-  margin: 0 4px;
-}
-
-.villain-two img{
-   height: 80px;
-   width:80px;
-   border-radius: 8px;
- }
-
- .villain-two p{
-   font-size: 10px;
-   padding: 4px 8px;
-   border-radius: 8px;
-   border: 1px solid springgreen;
- }
-
-
- .villain-three {
-    position: relative;
-    right: 10px;
-  padding: 5px 5px;
-  margin: 0 4px;
-   margin-left: 20px;
-}
-
-.villain-three img{
-   height: 80px;
-   width:80px;
-   border-radius: 8px;
- }
-
- .villain-three p{
-   font-size: 10px;
-   padding: 4px 8px;
-   border-radius: 8px;
-   border: 1px solid springgreen;
- }
-
- .pop-up{
-  width: 400px;
-  height: 60px;
-  margin: 0 10px;
-  border-radius: 25px;
- }
-
- .result-msg{
-   font-size: 13px;
-   font-weight: 500;
- }
-
- .game-play{
-   padding:0 2px;
-   margin: 5px 2px;
-  
-  
- }
- .heros{
-   padding: 10px 40px;
-   margin: 10px 10px;
- }
- .heros img{
-   height:120px;
-   width: 100px;
- }
- .hero-option img{
-   height: 20px;
-   width: 20px;
- }
- .hero-option{
-   padding: 10px 10px;
-   border-radius: 10px;
- 
- }
-
- .villains{
-   margin: 10px 10px;
-   padding: 10px 40px;
-  
- }
- .villains img{
-   height:120px;
-   width: 100px;
- }
-
- .villain-option{
-   padding: 10px 10px;
-   border-radius: 10px;
- 
- }
- .villain-option img{
-   height: 20px;
-   width: 20px;
- }
- .swip-btn{
-    padding: 10px 15px;
- }
-
- .hero-btn{
-    font-size: 15px;
-    margin: 0 7px;
-    padding: 10px 35px;
-    border-radius: 15px;
- }
- .select{
-    font-size: 15px;
-    margin: 0 7px;
-    padding: 10px 35px;
-    border-radius: 15px;
- }
- .reset{
-    font-size: 15px;
-    margin: 0 7px;
-    padding: 10px 35px;
-    border-radius: 15px;
- }
-
- .all-options{
-  margin: 12px 7px ;
-  padding: 8px 7px;
-  
-}
-
-.all-options img{
-  height: 80px;
-  width: 80px;
-  padding: 4px 4px;
-  border-radius: 15px;
-  background-color: black;
-  margin: 0 25px;
-}
-}
-
-
-
-
-

@@ -42,7 +42,8 @@ const winningRate=document.querySelector(".winn-rate")
 const statsBtn=document.querySelector(".stats-btn")
 const closeBtn=document.querySelector(".close-tab")
 
-
+let count=0
+let timer=null
 /** hero win Quote */
 let heroWinQuote=[
   "Justice never loses. You did it, Hero! Get ready for the next battle!",
@@ -205,13 +206,16 @@ villainCard.style.filter = "grayscale(0%)"
 
 if(fightHero.src===swipHero.src){
   swipHero.src=""
-swipHero.style.backgroundColor="black"
-
-
+swipHero.style.backgroundColor="rgb(247, 91, 91)"
 }
 
+setTimeout(()=>{
+  stopTimer()
+}, 3000)
 totalGamePlayed()
 })
+
+// change & select aliens function//
 function changeAliens(){
   let changeIndex=Math.floor(Math.random()*8)
   
@@ -575,4 +579,25 @@ function calcWinningRate(){
    winningRate.innerText="0"
  }
 }
+
+// set timmer//
+
+
+function startTimer(){
+  count++
+  console.log(count)
+  if(count===4){
+    
+    count=0
+ swipHero.style.backgroundColor="black"
+   clearInterval(timer)
+  
+  }
+}
+function stopTimer(){
+  if(timer!=null){
+    clearInterval(timer)
+  }
+  timer=setInterval(startTimer,1000)
+  }
 

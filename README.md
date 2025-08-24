@@ -34,7 +34,7 @@ Choose Rock, Paper, or Scissors to battle Vilgax!
 - Character change on level progression (work in progress)
 
 ## 🔧 Still Improving:
-- Responsive design for mobile
+- not responsive for any devices yet.
 - In-game instruction popup
 - Sound effects and win animations
 
